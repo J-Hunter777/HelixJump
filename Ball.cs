@@ -42,6 +42,12 @@ namespace Assets.Scripts.Ball
 {
     internal class BallEffects : MonoBehaviour
     {
+        private ParticleSystem _collisionParticles;
+        private void Start()
+        {
+           _collisionParticles  = Instantiate(_collisionParticlesPrefab);
+            
+        }
         [SerializeField] private ParticleSystem _collisionParticlesPrefab;
         private void OnCollisionEnter(Collision other) =>
             EmitCollisionParticles(other);
@@ -49,7 +55,9 @@ namespace Assets.Scripts.Ball
         private void EmitCollisionParticles(Collision other)
         {
             Vector3 collisionPoints = other.contacts[0].point;
-            Instantiate(_collisionParticlesPrefab, collisionPoints, Quaternion.identity);
+            _collisionParticles.transform.position = collisionPoints;
+            _collisionParticles.Play();
         }
     }
 }
+
