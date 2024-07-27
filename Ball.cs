@@ -30,3 +30,26 @@ namespace Assets.Scripts.Tower
 }
 //Add ball bouncy
 //Create Ball Collision Effect
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
+
+namespace Assets.Scripts.Ball
+{
+    internal class BallEffects : MonoBehaviour
+    {
+        [SerializeField] private ParticleSystem _collisionParticlesPrefab;
+        private void OnCollisionEnter(Collision other) =>
+            EmitCollisionParticles(other);
+        
+        private void EmitCollisionParticles(Collision other)
+        {
+            Vector3 collisionPoints = other.contacts[0].point;
+            Instantiate(_collisionParticlesPrefab, collisionPoints, Quaternion.identity);
+        }
+    }
+}
