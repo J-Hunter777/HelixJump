@@ -153,5 +153,43 @@ namespace Assets.Scripts.Phyzics.Bounce
     }
 }
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
+
+namespace Assets.Scripts.Ball
+{
+    public class BallPaticles : MonoBehaviour
+    {
+        private const float SurfaceYOffset = 0.06f;
+        [SerializeField] ParticleSystem _collisionPaticlesPrefab;
+        [SerializeField] ParticleSystem _spotPaticlePreafab;
+
+        private ParticleSystem _collisionParticles;
+        private void Start() => 
+            _collisionParticles = Instantiate(_collisionPaticlesPrefab);
+
+        private void OnCollisionEnter(Collision other)
+        {
+            EmitSpotParticles(other);
+            EmitCollisionParticles(other);
+        }
+
+        private void EmitCollisionParticles(Collision other)
+        {
+            Vector3 collisionPoints = other.contacts[0].point;
+            _collisionParticles.transform.position = collisionPoints;
+            _collisionParticles.Play();
+        }
+        private void EmitSpotParticles(Collision collision)
+        {
+            Vector3 collisionPosition = collision.contacts[0].point + Vector3.up * SurfaceYOffset;
+            Instantiate(_spotPaticlePreafab, collisionPosition, Quaternion.identity, collision.transform); ;
+        }
+    }
+}
 
 
