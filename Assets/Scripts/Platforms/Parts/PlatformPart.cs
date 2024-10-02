@@ -1,5 +1,5 @@
-﻿using Assets.Scripts.Extentions;
-using Assets.Scripts.Phyzics.Ejection;
+﻿using Extentions;
+using Phyzics.Ejection;
 using UnityEngine;
 
 namespace Assets.Scripts.Platforms.Parts

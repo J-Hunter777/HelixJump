@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Structur
+namespace Structur
 {
     [CreateAssetMenu(menuName = "ScriptableObjects/Structur/FloatRange", fileName = "FloatRange")]
     public class FloatRange : Range<float>

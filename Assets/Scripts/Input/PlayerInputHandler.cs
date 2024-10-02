@@ -1,14 +1,8 @@
-﻿using Assets.Scripts.Tower;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Input.Swipes;
+﻿using Input.Swipes;
+using Tower;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-namespace Assets.Scripts.Input
+namespace Input
 {
     public class PlayerInputHandler : MonoBehaviour
     {

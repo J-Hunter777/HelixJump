@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Ball;
-using Assets.Scripts.Platforms;
+﻿using Assets.Scripts.Platforms;
+using Ball;
 using UnityEngine;
 
-namespace Assets.Scripts.Platforms
+namespace Platforms
 {
     [RequireComponent(typeof(Collider))]
     public class PlatformPassTrigger : MonoBehaviour

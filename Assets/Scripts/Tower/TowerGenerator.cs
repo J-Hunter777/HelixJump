@@ -1,16 +1,9 @@
-﻿using Assets.Scripts.Extentions;
+﻿using System.Collections.Generic;
 using Assets.Scripts.Platforms;
-using Assets.Scripts.Structur;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Unity.Tutorials.Core.Editor;
+using Structur;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-namespace Assets.Scripts.Tower
+namespace Tower
     
 {
 

@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Structur
+namespace Structur
 {
     [System.Serializable]
     public class Vector3Curves

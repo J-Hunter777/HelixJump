@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Structur
+namespace Structur
 {
 
     public class Range<T> : ScriptableObject

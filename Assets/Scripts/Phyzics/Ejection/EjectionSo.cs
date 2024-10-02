@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Phyzics.Ejection
+namespace Phyzics.Ejection
 {
     [CreateAssetMenu(fileName = "Ejection", menuName = "ScriptableObjects/Phyzics/Ejection")]
     public class EjectionSo : ScriptableObject

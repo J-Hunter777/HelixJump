@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Ball
+namespace Ball
 {
-    public class BallPaticles : MonoBehaviour
+    public class BallParticles : MonoBehaviour
     {
         private const float SurfaceYOffset = 0.06f;
         [SerializeField] ParticleSystem _collisionPaticlesPrefab;

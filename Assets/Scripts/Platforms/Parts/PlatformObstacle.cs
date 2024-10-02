@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Platforms.Parts;
 
-namespace Assets.Scripts.Platforms.Parts
+namespace Platforms.Parts
 {
     public class PlatformObstacle : PlatformPart { }
 }

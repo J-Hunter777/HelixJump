@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Phyzics.Bounce
+namespace Phyzics.Bounce
 {
     [System.Serializable]
     public class BounceData

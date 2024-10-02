@@ -1,5 +1,6 @@
-﻿using Assets.Scripts.Phyzics.Ejection;
-using Assets.Scripts.Platforms.Parts;
+﻿using Assets.Scripts.Platforms.Parts;
+using Phyzics.Ejection;
+using Platforms;
 using UnityEngine;
 
 namespace Assets.Scripts.Platforms

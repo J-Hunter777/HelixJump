@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Platforms
+namespace Platforms
 {
     [CreateAssetMenu(fileName = "PlatformSettings", menuName = "ScriptableObjects/Platforms/platformsSettings")]
     public class PlatformSettings : ScriptableObject

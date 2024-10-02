@@ -1,14 +1,9 @@
-﻿using Assets.Scripts.Platforms;
-using Assets.Scripts.Structur;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Assets.Scripts.Platforms;
+using Structur;
 using UnityEngine;
-using static Assets.Scripts.Platforms.Platform;
 
-namespace Assets.Scripts.Tower
+namespace Tower
 {
     [CreateAssetMenu(menuName = "ScriptableObjects/Tower/TowerGenerationSettings", fileName = "TowerGenerationSettings")]
 

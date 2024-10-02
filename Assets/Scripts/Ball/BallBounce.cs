@@ -1,10 +1,8 @@
-﻿using Assets.Scripts.Phyzics;
-using Assets.Scripts.Phyzics.Bounce;
-using System;
+﻿using Phyzics.Bounce;
+using Structur;
 using UnityEngine;
-using Assets.Scripts.Structur;
 
-namespace Assets.Scripts.Ball
+namespace Ball
 {
     public class BallBounce : MonoBehaviour
     {

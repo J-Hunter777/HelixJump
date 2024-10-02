@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Platforms.Parts;
 using UnityEngine;
-using Assets.Scripts.Phyzics;
-using Assets.Scripts.Ball;
-using Assets.Scripts.Platforms;
-using Assets.Scripts.Platforms.Parts;
 
-namespace Assets.Scripts.Ball
+namespace Ball
 {
     public class BallCollisions : MonoBehaviour
     {
         [SerializeField] private BallBounce _bounce;
-        [SerializeField] private BallPaticles _particles;
+        [SerializeField] private BallParticles _particles;
         [SerializeField] private Transform _ball;
         [SerializeField] private BallDistroyer _destroyer;
         

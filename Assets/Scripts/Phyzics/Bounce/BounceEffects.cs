@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Structur;
 using UnityEngine;
-using Assets.Scripts;
-using Assets.Scripts.Structur;
-using Assets.Scripts.Phyzics.Bounce;
 
-
-namespace Assets.Scripts.Phyzics.Bounce
+namespace Phyzics.Bounce
 {
     public class BounceEffects
     {

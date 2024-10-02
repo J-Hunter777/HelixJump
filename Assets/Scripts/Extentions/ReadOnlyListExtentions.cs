@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
-namespace Assets.Scripts.Extentions
+namespace Extentions
 {
     public static class ReadOnlyListExtentions
     {
